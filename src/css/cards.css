@@ -1,0 +1,118 @@
+.cards {
+    padding: 20px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards__card {
+    background: #006241;
+    margin-top: 25px;
+    color: #fff;
+    position: relative;
+    width: 90%;
+    margin: 25px 25px 0;
+}
+
+.cards__card-img {
+    width: 100%;
+}
+
+.cards__card-title span {
+    color: yellow;
+}
+
+.cards__card-btn {
+    background: inherit;
+    border: 1px solid #fff;
+    color: #fff;
+    width: auto;
+    border-radius: 7.5px;
+    padding: 6px 24px;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.cards__card-btn:hover {
+    background: yellow;
+    color: #fff;
+    border: 1px solid yellow;
+}
+
+.cards__card-description {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.cards__card-container-text {
+    padding: 15px;
+}
+
+.cards__container-btn {
+    display: flex;
+    flex-direction: column;
+    margin: -30px 2px;
+}
+
+.cards__container-btn a {
+    width: 98%;
+    margin: 7.5px 0 0 ;
+    text-align: center;
+}
+
+.cards__card-circle {
+    background: yellow;
+    border-radius: 50%;
+    color: #000;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (min-width: 768px) {
+        .cards {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .cards__card {
+            width: 40%;
+        }
+
+        .cards__card-btn:hover {
+            background: yellow;
+            color: #fff;
+            border: 1px solid yellow;
+        }
+}
+
+@media (min-width: 1024px) {
+.cards__container-btn {
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 7.5px;
+    display: flex;
+		flex-direction: column;
+}
+
+.cards__card {
+    width: 400px;
+    height: 400px;
+    margin: 25px 20px;
+}
+}
